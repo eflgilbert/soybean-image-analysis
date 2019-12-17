@@ -1,10 +1,15 @@
-function [wavelengths, spatial, frames, spectral, tint, settings] = parseHdrInfo(path, name)
-% parseHdrInfo
-% [wavelengths, spatial, frames, spectral, tint, settings] = parseHdrInfo(path,filename)
-% tint = integration time
-% settings = band intensities for Acuity files
+%% parseHDrInfo.m
+%% Author: Erin Gilbert
+%% Created: May 24 2018
+%% Modified: Sept 16 2018
 
-                %Enter a path (e.g. 'M:\Engineering\...') and .hdr filename
+%% Usage: parseHdrInfo(/Path/to/Directory, IMAGE_IDENTIFIER.hdr)
+%% Purpose: Retrieve metadata from the header file created along with each hyperspectral image.
+%% Notes: tint = integration time; settings = band intensities for Acuity files
+
+
+function [wavelengths, spatial, frames, spectral, tint, settings] = parseHdrInfo(path, name)
+
 f = fullfile(path, name);       
 fp = fopen(f, 'r');             %Opens file as read-only
 

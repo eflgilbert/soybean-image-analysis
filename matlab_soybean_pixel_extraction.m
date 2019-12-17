@@ -4,7 +4,7 @@
 %% Modified: Sept 16 2018
 
 %% Usage: matlab /r "file=RAWFILE;file_white=RAWWHITE;file_dark=DARKFILE;matlab_soybean_pixel_extraction.m"
-%% Purpose: Using thresholds (Mainly NDVI) to create a mask of an image with black being backgrounf (non-plant) and white being plant. These masks are then used to populate a JSON file with the pixel coordinates and cell values of hyperspectral images of plants.
+%% Purpose: Using thresholds (Mainly NDVI) to create a mask of an image with black being background (non-plant) and white being plant. These masks are then used to populate a JSON file with the pixel coordinates and cell values of hyperspectral images of plants.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Define Environment  %%
